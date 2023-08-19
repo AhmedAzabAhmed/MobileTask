@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0B95182A9114B000169542 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0B95172A9114B000169542 /* CombineMoya */; };
+		5F0B951A2A9114B000169542 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0B95192A9114B000169542 /* Moya */; };
+		5F0B951C2A9114B000169542 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0B951B2A9114B000169542 /* ReactiveMoya */; };
+		5F0B951E2A9114B000169542 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0B951D2A9114B000169542 /* RxMoya */; };
 		5F2BB3352A91115700163834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2BB3342A91115700163834 /* AppDelegate.swift */; };
-		5F2BB3372A91115700163834 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2BB3362A91115700163834 /* SceneDelegate.swift */; };
 		5F2BB3392A91115700163834 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2BB3382A91115700163834 /* ViewController.swift */; };
 		5F2BB33C2A91115700163834 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2BB33A2A91115700163834 /* Main.storyboard */; };
 		5F2BB33F2A91115700163834 /* MobileTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F2BB33D2A91115700163834 /* MobileTask.xcdatamodeld */; };
@@ -39,7 +42,6 @@
 /* Begin PBXFileReference section */
 		5F2BB3312A91115700163834 /* MobileTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2BB3342A91115700163834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F2BB3362A91115700163834 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5F2BB3382A91115700163834 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F2BB33B2A91115700163834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F2BB33E2A91115700163834 /* MobileTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MobileTask.xcdatamodel; sourceTree = "<group>"; };
@@ -58,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0B951A2A9114B000169542 /* Moya in Frameworks */,
+				5F0B95182A9114B000169542 /* CombineMoya in Frameworks */,
+				5F0B951E2A9114B000169542 /* RxMoya in Frameworks */,
+				5F0B951C2A9114B000169542 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F0B951F2A91163800169542 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5F0B95202A91167B00169542 /* LoginScreen */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		5F0B95202A91167B00169542 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5F2BB3382A91115700163834 /* ViewController.swift */,
+				5F2BB33A2A91115700163834 /* Main.storyboard */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
 		5F2BB3282A91115700163834 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +124,8 @@
 		5F2BB3332A91115700163834 /* MobileTask */ = {
 			isa = PBXGroup;
 			children = (
+				5F0B951F2A91163800169542 /* presentation */,
 				5F2BB3342A91115700163834 /* AppDelegate.swift */,
-				5F2BB3362A91115700163834 /* SceneDelegate.swift */,
-				5F2BB3382A91115700163834 /* ViewController.swift */,
-				5F2BB33A2A91115700163834 /* Main.storyboard */,
 				5F2BB3402A91115900163834 /* Assets.xcassets */,
 				5F2BB3422A91115900163834 /* LaunchScreen.storyboard */,
 				5F2BB3452A91115900163834 /* Info.plist */,
@@ -146,6 +167,12 @@
 			dependencies = (
 			);
 			name = MobileTask;
+			packageProductDependencies = (
+				5F0B95172A9114B000169542 /* CombineMoya */,
+				5F0B95192A9114B000169542 /* Moya */,
+				5F0B951B2A9114B000169542 /* ReactiveMoya */,
+				5F0B951D2A9114B000169542 /* RxMoya */,
+			);
 			productName = MobileTask;
 			productReference = 5F2BB3312A91115700163834 /* MobileTask.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +245,9 @@
 				Base,
 			);
 			mainGroup = 5F2BB3282A91115700163834;
+			packageReferences = (
+				5F0B95162A9114B000169542 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 5F2BB3322A91115700163834 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,7 +294,6 @@
 				5F2BB3392A91115700163834 /* ViewController.swift in Sources */,
 				5F2BB3352A91115700163834 /* AppDelegate.swift in Sources */,
 				5F2BB33F2A91115700163834 /* MobileTask.xcdatamodeld in Sources */,
-				5F2BB3372A91115700163834 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +631,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F0B95162A9114B000169542 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F0B95172A9114B000169542 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F0B95162A9114B000169542 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		5F0B95192A9114B000169542 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F0B95162A9114B000169542 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		5F0B951B2A9114B000169542 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F0B95162A9114B000169542 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		5F0B951D2A9114B000169542 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F0B95162A9114B000169542 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5F2BB33D2A91115700163834 /* MobileTask.xcdatamodeld */ = {
