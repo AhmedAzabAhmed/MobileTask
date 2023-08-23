@@ -22,6 +22,21 @@
 		5F0B953B2A91235300169542 /* APIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B953A2A91235300169542 /* APIErrors.swift */; };
 		5F0B953D2A9123A200169542 /* RecipesRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B953C2A9123A200169542 /* RecipesRepositoryImplementation.swift */; };
 		5F0B953F2A9124A700169542 /* RecipesTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B953E2A9124A700169542 /* RecipesTarget.swift */; };
+		5F0B95422A91278E00169542 /* RecipesUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B95412A91278E00169542 /* RecipesUsecase.swift */; };
+		5F0B95442A91302000169542 /* RecipesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B95432A91302000169542 /* RecipesModel.swift */; };
+		5F0B95462A91323900169542 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B95452A91323900169542 /* RecipesViewModel.swift */; };
+		5F0B95482A91337F00169542 /* ScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B95472A91337F00169542 /* ScreenState.swift */; };
+		5F0B954B2A91397A00169542 /* RecipesEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0B954A2A91397A00169542 /* RecipesEmptyView.xib */; };
+		5F0B954D2A91398800169542 /* RecipesEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B954C2A91398800169542 /* RecipesEmptyView.swift */; };
+		5F0B954F2A913B2D00169542 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B954E2A913B2D00169542 /* UIView+Extension.swift */; };
+		5F0B95532A913C7B00169542 /* RecipesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0B95512A913C7B00169542 /* RecipesCell.swift */; };
+		5F0B95542A913C7B00169542 /* RecipesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F0B95522A913C7B00169542 /* RecipesCell.xib */; };
+		5F0B95572A91765100169542 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0B95562A91765100169542 /* Kingfisher */; };
+		5F0B955A2A9176B100169542 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 5F0B95592A9176B100169542 /* SkeletonView */; };
+		5F145D052A957299002A3C71 /* RecipesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F145D032A957299002A3C71 /* RecipesDetailsViewController.swift */; };
+		5F145D062A957299002A3C71 /* RecipesDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F145D042A957299002A3C71 /* RecipesDetailsViewController.xib */; };
+		5F145D082A95813E002A3C71 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F145D072A95813E002A3C71 /* LoginViewModel.swift */; };
+		5F145D0C2A958363002A3C71 /* LoginErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F145D0B2A958363002A3C71 /* LoginErrorState.swift */; };
 		5F2BB3352A91115700163834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2BB3342A91115700163834 /* AppDelegate.swift */; };
 		5F2BB3392A91115700163834 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2BB3382A91115700163834 /* ViewController.swift */; };
 		5F2BB33C2A91115700163834 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F2BB33A2A91115700163834 /* Main.storyboard */; };
@@ -62,6 +77,19 @@
 		5F0B953A2A91235300169542 /* APIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrors.swift; sourceTree = "<group>"; };
 		5F0B953C2A9123A200169542 /* RecipesRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesRepositoryImplementation.swift; sourceTree = "<group>"; };
 		5F0B953E2A9124A700169542 /* RecipesTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTarget.swift; sourceTree = "<group>"; };
+		5F0B95412A91278E00169542 /* RecipesUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesUsecase.swift; sourceTree = "<group>"; };
+		5F0B95432A91302000169542 /* RecipesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesModel.swift; sourceTree = "<group>"; };
+		5F0B95452A91323900169542 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
+		5F0B95472A91337F00169542 /* ScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenState.swift; sourceTree = "<group>"; };
+		5F0B954A2A91397A00169542 /* RecipesEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesEmptyView.xib; sourceTree = "<group>"; };
+		5F0B954C2A91398800169542 /* RecipesEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesEmptyView.swift; sourceTree = "<group>"; };
+		5F0B954E2A913B2D00169542 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		5F0B95512A913C7B00169542 /* RecipesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesCell.swift; sourceTree = "<group>"; };
+		5F0B95522A913C7B00169542 /* RecipesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesCell.xib; sourceTree = "<group>"; };
+		5F145D032A957299002A3C71 /* RecipesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesDetailsViewController.swift; sourceTree = "<group>"; };
+		5F145D042A957299002A3C71 /* RecipesDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecipesDetailsViewController.xib; sourceTree = "<group>"; };
+		5F145D072A95813E002A3C71 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5F145D0B2A958363002A3C71 /* LoginErrorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginErrorState.swift; sourceTree = "<group>"; };
 		5F2BB3312A91115700163834 /* MobileTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F2BB3342A91115700163834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F2BB3382A91115700163834 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +114,8 @@
 				5F0B95182A9114B000169542 /* CombineMoya in Frameworks */,
 				5F0B951E2A9114B000169542 /* RxMoya in Frameworks */,
 				5F0B951C2A9114B000169542 /* ReactiveMoya in Frameworks */,
+				5F0B955A2A9176B100169542 /* SkeletonView in Frameworks */,
+				5F0B95572A91765100169542 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +139,7 @@
 		5F0B951F2A91163800169542 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				5F145D002A95723D002A3C71 /* RecipesDetails */,
 				5F0B952E2A911E7A00169542 /* RecipesScreen */,
 				5F0B95202A91167B00169542 /* LoginScreen */,
 			);
@@ -120,6 +151,7 @@
 			children = (
 				5F2BB3382A91115700163834 /* ViewController.swift */,
 				5F2BB33A2A91115700163834 /* Main.storyboard */,
+				5F145D072A95813E002A3C71 /* LoginViewModel.swift */,
 			);
 			path = LoginScreen;
 			sourceTree = "<group>";
@@ -148,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				5F0B952B2A911B6500169542 /* Extensions */,
+				5F0B95472A91337F00169542 /* ScreenState.swift */,
+				5F145D0B2A958363002A3C71 /* LoginErrorState.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -156,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				5F0B952C2A911B7300169542 /* Strings+Extension.swift */,
+				5F0B954E2A913B2D00169542 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -163,8 +198,12 @@
 		5F0B952E2A911E7A00169542 /* RecipesScreen */ = {
 			isa = PBXGroup;
 			children = (
+				5F0B95502A913C5D00169542 /* RecipesCell */,
+				5F0B95492A91395200169542 /* RecipesEmptyView */,
 				5F0B952F2A911EB900169542 /* RecipesViewController.swift */,
 				5F0B95302A911EB900169542 /* RecipesViewController.xib */,
+				5F0B95432A91302000169542 /* RecipesModel.swift */,
+				5F0B95452A91323900169542 /* RecipesViewModel.swift */,
 			);
 			path = RecipesScreen;
 			sourceTree = "<group>";
@@ -194,6 +233,41 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		5F0B95402A91276800169542 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+				5F0B95412A91278E00169542 /* RecipesUsecase.swift */,
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		5F0B95492A91395200169542 /* RecipesEmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				5F0B954A2A91397A00169542 /* RecipesEmptyView.xib */,
+				5F0B954C2A91398800169542 /* RecipesEmptyView.swift */,
+			);
+			path = RecipesEmptyView;
+			sourceTree = "<group>";
+		};
+		5F0B95502A913C5D00169542 /* RecipesCell */ = {
+			isa = PBXGroup;
+			children = (
+				5F0B95512A913C7B00169542 /* RecipesCell.swift */,
+				5F0B95522A913C7B00169542 /* RecipesCell.xib */,
+			);
+			path = RecipesCell;
+			sourceTree = "<group>";
+		};
+		5F145D002A95723D002A3C71 /* RecipesDetails */ = {
+			isa = PBXGroup;
+			children = (
+				5F145D032A957299002A3C71 /* RecipesDetailsViewController.swift */,
+				5F145D042A957299002A3C71 /* RecipesDetailsViewController.xib */,
+			);
+			path = RecipesDetails;
+			sourceTree = "<group>";
+		};
 		5F2BB3282A91115700163834 = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +295,7 @@
 				5F0B95212A9119B000169542 /* NetworkLayer */,
 				5F0B95332A911FD000169542 /* Repository */,
 				5F0B95372A9120A200169542 /* Entities */,
+				5F0B95402A91276800169542 /* Usecase */,
 				5F0B951F2A91163800169542 /* presentation */,
 				5F2BB3342A91115700163834 /* AppDelegate.swift */,
 				5F2BB3402A91115900163834 /* Assets.xcassets */,
@@ -269,6 +344,8 @@
 				5F0B95192A9114B000169542 /* Moya */,
 				5F0B951B2A9114B000169542 /* ReactiveMoya */,
 				5F0B951D2A9114B000169542 /* RxMoya */,
+				5F0B95562A91765100169542 /* Kingfisher */,
+				5F0B95592A9176B100169542 /* SkeletonView */,
 			);
 			productName = MobileTask;
 			productReference = 5F2BB3312A91115700163834 /* MobileTask.app */;
@@ -344,6 +421,8 @@
 			mainGroup = 5F2BB3282A91115700163834;
 			packageReferences = (
 				5F0B95162A9114B000169542 /* XCRemoteSwiftPackageReference "Moya" */,
+				5F0B95552A91765100169542 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				5F0B95582A9176B100169542 /* XCRemoteSwiftPackageReference "SkeletonView" */,
 			);
 			productRefGroup = 5F2BB3322A91115700163834 /* Products */;
 			projectDirPath = "";
@@ -364,7 +443,10 @@
 				5F0B95322A911EB900169542 /* RecipesViewController.xib in Resources */,
 				5F2BB3442A91115900163834 /* LaunchScreen.storyboard in Resources */,
 				5F2BB3412A91115900163834 /* Assets.xcassets in Resources */,
+				5F145D062A957299002A3C71 /* RecipesDetailsViewController.xib in Resources */,
+				5F0B95542A913C7B00169542 /* RecipesCell.xib in Resources */,
 				5F2BB33C2A91115700163834 /* Main.storyboard in Resources */,
+				5F0B954B2A91397A00169542 /* RecipesEmptyView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,15 +473,25 @@
 			files = (
 				5F0B953F2A9124A700169542 /* RecipesTarget.swift in Sources */,
 				5F0B95312A911EB900169542 /* RecipesViewController.swift in Sources */,
+				5F145D082A95813E002A3C71 /* LoginViewModel.swift in Sources */,
 				5F0B95292A911A8500169542 /* NetworkManager.swift in Sources */,
+				5F145D0C2A958363002A3C71 /* LoginErrorState.swift in Sources */,
+				5F145D052A957299002A3C71 /* RecipesDetailsViewController.swift in Sources */,
+				5F0B95532A913C7B00169542 /* RecipesCell.swift in Sources */,
 				5F0B95362A91204C00169542 /* RecipesProtocol.swift in Sources */,
 				5F0B953B2A91235300169542 /* APIErrors.swift in Sources */,
+				5F0B95422A91278E00169542 /* RecipesUsecase.swift in Sources */,
+				5F0B954D2A91398800169542 /* RecipesEmptyView.swift in Sources */,
 				5F2BB3392A91115700163834 /* ViewController.swift in Sources */,
+				5F0B95442A91302000169542 /* RecipesModel.swift in Sources */,
+				5F0B95462A91323900169542 /* RecipesViewModel.swift in Sources */,
 				5F0B95272A911A2300169542 /* APIConstants.swift in Sources */,
 				5F2BB3352A91115700163834 /* AppDelegate.swift in Sources */,
+				5F0B954F2A913B2D00169542 /* UIView+Extension.swift in Sources */,
 				5F0B95242A9119CC00169542 /* TargetType+Extension.swift in Sources */,
 				5F0B95392A9120D000169542 /* RecipesDataModel.swift in Sources */,
 				5F0B953D2A9123A200169542 /* RecipesRepositoryImplementation.swift in Sources */,
+				5F0B95482A91337F00169542 /* ScreenState.swift in Sources */,
 				5F0B952D2A911B7300169542 /* Strings+Extension.swift in Sources */,
 				5F2BB33F2A91115700163834 /* MobileTask.xcdatamodeld in Sources */,
 			);
@@ -749,6 +841,22 @@
 				kind = branch;
 			};
 		};
+		5F0B95552A91765100169542 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		5F0B95582A9176B100169542 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -771,6 +879,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5F0B95162A9114B000169542 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		5F0B95562A91765100169542 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F0B95552A91765100169542 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		5F0B95592A9176B100169542 /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F0B95582A9176B100169542 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
 		};
 /* End XCSwiftPackageProductDependency section */
 
