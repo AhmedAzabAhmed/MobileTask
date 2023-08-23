@@ -6,31 +6,76 @@
 //
 
 import XCTest
+import Combine
 @testable import MobileTask
 
-final class MobileTaskTests: XCTestCase {
+final class RecipesListTest: XCTestCase {
 
+    var viewModel: RecipesViewModel!
+    var usecase: MockRecipeListUsecase!
+    var cancellable: Set<AnyCancellable>!
+    let timeInterval: TimeInterval = 10
+    let expectation = XCTestExpectation(description: "Publishes product list then finishes")
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        usecase = MockRecipeListUsecase()
+        viewModel = RecipesViewModel(usecase: usecase)
+        cancellable = Set<AnyCancellable>()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        usecase = nil
+        viewModel = nil
+        cancellable.forEach({ $0.cancel() })
+        cancellable.removeAll()
+        cancellable = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testSuccessedGetRecipesList() throws {
+        viewModel
+            .recipesList
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] state in
+                guard let self = self else { return }
+                switch state {
+                case .loading:
+                    break
+                    
+                case .success(let list):
+                    XCTAssertTrue(list.count > 0)
+                    
+                case .failure(let error):
+                    XCTAssertFalse(!error.localizedDescription.isValidString)
+                }
+                self.expectation.fulfill()
+            }.store(in: &cancellable)
+        
+        viewModel.getRecipesList()
+        wait(for: [expectation], timeout: timeInterval)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testFailedGetRecipesList() throws {
+        usecase.result = .failure(.genericError)
+        viewModel
+            .recipesList
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] state in
+                guard let self = self else { return }
+                switch state {
+                case .loading:
+                    break
+                    
+                case .success(let list):
+                    XCTAssertFalse(list.count > 0)
+                    
+                case .failure(let error):
+                    XCTAssertTrue(error.localizedDescription.isValidString)
+                }
+                self.expectation.fulfill()
+            }.store(in: &cancellable)
+        
+        viewModel.getRecipesList()
+        wait(for: [expectation], timeout: timeInterval)
     }
 
 }
